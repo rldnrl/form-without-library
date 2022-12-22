@@ -16,7 +16,7 @@ export default function Input({
     <label className="flex flex-col">
       <span>{label}</span>
       <input
-        className="p-[15px] my-[10px] outline-gray-300 outline focus:outline-gray-700 rounded-sm rounded-md"
+        className="p-[15px] my-[10px] outline-gray-300 outline focus:outline-gray-700 rounded-md"
         type={type}
         name={name}
         value={value}

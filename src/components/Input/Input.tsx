@@ -13,18 +13,16 @@ export default function Input({
   onChange,
 }: InputProps) {
   return (
-    <div className="formInput">
-      <label>
-        <span>{label}</span>
-        <input
-          className="p-[15px] my-[10px] outline rounded-sm"
-          type={type}
-          name={name}
-          value={value}
-          placeholder={placeholder}
-          onChange={onChange}
-        />
-      </label>
-    </div>
+    <label className="flex flex-col">
+      <span>{label}</span>
+      <input
+        className="p-[15px] my-[10px] outline-gray-300 outline focus:outline-gray-700 rounded-sm rounded-md"
+        type={type}
+        name={name}
+        value={value}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
+    </label>
   );
 }
